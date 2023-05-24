@@ -30,9 +30,11 @@ class MyFormState extends State<MyForm>{
     final namaBarangController  = TextEditingController();
     final deskripsiController = TextEditingController();
     final hargaController = TextEditingController();
+    final kondisiController = TextEditingController();
+    final pengirimanController =  TextEditingController();
+    final returController =  TextEditingController();
 
     String kondisi = "Bekas";
- 
 
     return Form(
       key: _formKey,
@@ -76,6 +78,9 @@ class MyFormState extends State<MyForm>{
               namaBarangController: namaBarangController,
               deskripsiController: deskripsiController,
               hargaController: hargaController,
+              kondisiController: kondisiController,
+              pengirimanController: pengirimanController,
+              returController: returController,
             ),
           ],
         ),
@@ -155,11 +160,17 @@ class ButtonPublikasikan extends StatelessWidget {
     required this.namaBarangController,
     required this.deskripsiController,
     required this.hargaController,
+    required this.kondisiController,
+    required this.pengirimanController,
+    required this.returController,
   });
 
   final TextEditingController namaBarangController;
   final TextEditingController deskripsiController;
   final TextEditingController hargaController;
+  final TextEditingController kondisiController;
+  final TextEditingController pengirimanController;
+  final TextEditingController returController;
 
   @override
   Widget build(BuildContext context) {
@@ -175,13 +186,19 @@ class ButtonPublikasikan extends StatelessWidget {
 
               String namaBarang = namaBarangController.text;
               String deskripsi = deskripsiController.text;
-              String harga = deskripsiController.text;
+              String harga = hargaController.text;
+              String kondisi = kondisiController.text;
+              String pengiriman = pengirimanController.text;
+              String retur = returController.text;
               // String kirim2 = deskripsiController.text;
               // String kirim2 = deskripsiController.text;
 
               formData.add(namaBarang);
               formData.add(deskripsi);
               formData.add(harga);
+              formData.add(kondisi);
+              formData.add(pengiriman);
+              formData.add(retur);
 
 
 

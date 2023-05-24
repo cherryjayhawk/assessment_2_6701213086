@@ -20,7 +20,7 @@ class SecondPage extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text("Nama Barang : " + data[0]),
+                child: Text("Nama barang : " + data[0]),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -29,6 +29,18 @@ class SecondPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text("Harga : " + data[2]),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("Jenis barang : "),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("Pengiriman dalam kota saja : "),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("Menerima retur : "),
               ),
               const Padding(
                 padding: EdgeInsets.all(8.0),
