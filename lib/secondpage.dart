@@ -32,15 +32,15 @@ class SecondPage extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text("Jenis barang : "),
+                child: Text("Jenis barang : baru"),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text("Pengiriman dalam kota saja : "),
+                child: Text("Pengiriman dalam kota saja : Tidak"),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text("Menerima retur : "),
+                child: Text("Menerima retur : Ya"),
               ),
               const Padding(
                 padding: EdgeInsets.all(8.0),
